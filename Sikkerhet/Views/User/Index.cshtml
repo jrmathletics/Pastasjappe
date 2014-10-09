@@ -1,0 +1,176 @@
+﻿@model IEnumerable<Oblig1.Models.User>
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<br />
+<br />
+<head>
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+
+<div class="row">
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_blanding.png" />
+            <div class="caption">
+                <h3>God blanding</h3>
+                <p>1000g <br /> kr 99.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_farfalle.png" alt="...">
+            <div class="caption">
+                <h3>Farfalle</h3>
+                <p>500g <br /> kr 39.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_fusilli.png" alt="...">
+            <div class="caption">
+                <h3>Fusilli</h3>
+                <p>500g <br /> kr 39.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_fusilli_farget2.png" alt="...">
+            <div class="caption">
+                <h3>Farget Fusilli</h3>
+                <p>500g <br /> kr 49.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_macaroni.png" alt="...">
+            <div class="caption">
+                <h3>Makaroni</h3>
+                <p>500g <br /> kr 29.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_penne.png" alt="...">
+            <div class="caption">
+                <h3>Penne</h3>
+                <p>500g <br /> kr 29.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_spagetti.png" alt="...">
+            <div class="caption">
+                <h3>Spagetti</h3>
+                <p>500g <br /> kr 29.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_tagliatelle.png" alt="...">
+            <div class="caption">
+                <h3>Tagliatelle</h3>
+                <p>500g <br /> kr 39.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_wheel_farget.png" alt="...">
+            <div class="caption">
+                <h3>Farget Hjul</h3>
+                <p>500g <br /> kr 49.00</p>
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_messure.png" alt="...">
+            <div class="caption">
+                <h3>Spagetti posjonerer</h3>
+                <p>kr 149.00</p>
+                <br />
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_multitool.png" alt="...">
+            <div class="caption">
+                <h3>Spagetti multi-tool</h3>
+                <p>kr 249.00</p>
+                <br />
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_ruller.png" alt="...">
+            <div class="caption">
+                <h3>Pasta ruller</h3>
+                <p>kr 1099.00</p>
+                <br />
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_sleiv.png" alt="...">
+            <div class="caption">
+                <h3>Pastasleiv</h3>
+                <p>kr 69.00</p>
+                <br />
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+            <img src="~/img/pasta_tools.png" alt="...">
+            <div class="caption">
+                <h3>Pasta tools</h3>
+                <p>kr 29.00</p>
+                <br />
+                <p><a href="#" class="btn btn-success" role="button">Legg til handlekurven</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    

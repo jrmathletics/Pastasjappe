@@ -1,0 +1,84 @@
+﻿@model Oblig1.Models.User
+
+<br />
+<br />
+<br />
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    <fieldset>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Firstname)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Firstname)
+                            @Html.ValidationMessageFor(model => model.Firstname)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Surname)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Surname)
+                            @Html.ValidationMessageFor(model => model.Surname)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Email)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Email)
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Address)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Address)
+                            @Html.ValidationMessageFor(model => model.Address)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.city.Cityname)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.city.Cityname)
+                            @Html.ValidationMessageFor(model => model.city.Cityname)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.city.Postcode)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.city.Postcode)
+                            @Html.ValidationMessageFor(model => model.city.Postcode)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Phonenr)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Phonenr)
+                            @Html.ValidationMessageFor(model => model.Phonenr)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Password)
+                        </div>
+                        <div class="editor-field">
+                                   @Html.PasswordFor(model => model.Password)
+                                   @Html.ValidationMessageFor(model => model.Password) 
+                        </div>
+
+                        <br />
+                            <input type="submit" name="Register" value="Register" class="btn btn-success"/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="@Url.Action("Index")" class="btn btn-danger">Back to Homepage</a>
+                        
+                    </fieldset>
+                }
+
+                <div>
+                    
+                </div>
+    
+    

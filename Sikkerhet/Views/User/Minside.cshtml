@@ -1,0 +1,32 @@
+﻿@model Oblig1.Models.User
+<br />
+<br />
+<br />
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Kontoinformasjon</a></li>
+    <li><a href="#profile" role="tab" data-toggle="tab">Ordrehistorikk</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <br />
+        <br />
+        <table class="table">
+            
+            @Model.Firstname
+            @Model.Surname
+            @Model.Email
+            @Model.Address
+            @Model.Password
+            @Model.Phonenr
+            @Model.Postcode            
+        </table>
+        
+    </div>
+    <div class="tab-pane" id="profile">Ordrehistorikk</div>
+    <div class="tab-pane" id="messages">...</div>
+    <div class="tab-pane" id="settings">...</div>
+</div>
